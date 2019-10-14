@@ -1,0 +1,18 @@
+ul.user-skills.user-skills__container
+    - 
+        var skills = [
+            ['frontend', ['html', 'css', 'js']],
+            ['workflow', ['git', 'terminal', 'gulp']],
+        ]
+    each item in skills 
+        li.user-skills__item.skills-row 
+            h3.skills-row__title #{item[0]}
+            ul.skills-row__list
+                each skill in item[1]
+                    li.skills-row__item
+                        .skill
+                            svg(viewBox="0 0 200 200" preserveAspectRatio="none").skill__shape
+                                circle(r="80" cx="100" cy="100").skill__circle.circle__under 
+                                circle(r="80" cx="100" cy="100" style='animation-delay: -15s').skill__circle.circle__above
+                                linear-gradient()
+                            .skill__title #{skill}

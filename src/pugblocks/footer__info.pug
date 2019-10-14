@@ -1,0 +1,13 @@
+.footer__info
+    .footer__info-block
+        .footer__text  Этот сайт я сделал в рамках обучения в Школе онлайн образования Loftschool                  
+        - var socials = [{"icon": 'insta', 'link': "#"}, {"icon": 'vk', 'link': "#"}, {"icon": "github", 'link': "#"}]
+            ul.socials__list
+                each item in socials
+                    li.socials__item                            
+                        a.footer__link(href=item.link)
+                            .border
+                                +icon(item.icon, "footer__link-pic") 
+    .footer__info-block
+        .footer__text  Всегда пишите код так, будто сопровождать его будет склонный к насилию психопат, который знает где вы живете
+        .footer__autor Martin Golding

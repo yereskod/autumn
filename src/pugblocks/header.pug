@@ -1,0 +1,11 @@
+header.header 
+    .header__content           
+        a.logo(href="#") ЕД                
+        +nav('nav')
+        .socials
+            - var socials = [{"icon": 'insta', 'link': "#"}, {"icon": 'vk', 'link': "#"}, {"icon": "github", 'link': "#"}]
+                ul.socials__list
+                    each item in socials
+                        li.socials__item
+                            a(href=item.link)
+                                +icon(item.icon, "socials__link-pic")

@@ -1,0 +1,107 @@
+.speak {
+  position: relative;
+  color: white;
+  padding: 150px 0px 0px 0px;
+}
+
+.slider-speak__up {
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.title-speak {
+  margin-right: 127px;
+}
+
+.scroll-slider {
+  display: flex;
+}
+
+.btn-block {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+.btn-block {
+  &:hover .slider-btn {
+    border: 2px solid #d6841f;
+  }
+
+  &:hover .sbtn {
+    fill: #d6841f;
+  }
+}
+
+.slider-btn {
+  width: 52px;
+  height: 52px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.sbtn {
+  width: 8px;
+  height: 12px;
+  fill: white;
+}
+
+.btn-left {
+  margin-right: 30px;
+}
+
+.sbtn-left {
+  transform: rotate(180deg);
+}
+
+.slider-rewiews__list {
+  display: flex;
+}
+
+.slider-rewiews__item {
+  margin-right: 80px;
+
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+.rewiews-user {
+  display: flex;
+  margin-left: 85px;
+}
+
+.userpic {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 27px;
+}
+
+.rewiews {
+  width: 425px;
+  display: flex;
+  min-height: 100px;
+  margin-bottom: 20px;
+  opacity: .5;
+
+  &::before {
+    content: svg-load('../../images/icons/quote.svg' width=80px, height=80px, fill=#313131, fill-opacity=0.5);
+    margin-right: 20px;
+  }
+}
+
+.sign__name {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.sign__profession {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 16px;
+  opacity: .3;
+}

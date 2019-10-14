@@ -1,0 +1,14 @@
+.work-content
+    .two 2              
+    .work-content__left                
+        .slider
+            +image('content/slider.png', 'slider-pic') 
+    .work-content__right
+        +hashtags('hashtags', ["HTML", "CSS", "Javascript"])
+        .siteinfo
+            h2.siteinfo__title Сайт школы образования
+            .siteinfo__text Этот сайт сделан в рамках обучения в Школе онлайн-образования LoftSchool.
+        .sitelink
+            a.ssitelink__content(href="#")                   
+                +icon('link', 'site-link')
+                .linktext Посмотреть сайт
